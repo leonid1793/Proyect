@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="48sp"
+                    android:text="Bienvenido"/>
+
+                <TextView
+                    android:id="@+id/fullname_text"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-9dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    tools:text="Juan Flores" />
+
+            </RelativeLayout>
+            <GridLayout
+                android:id="@+id/mainGrid"
+                android:columnCount="1"
+                android:rowCount="3"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="14dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="196dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="En casos de autismo, parálisis cerebral
+                infantil y deficiencia auditiva, el lenguaje
+                oral está gravemente limitado, por lo que es
+                necesaria la utilización de sistemas de
+                comunicación no verbales que sustituyan la
+                comunicación verbal o incrementen las
+                posibilidades comunicativas teniendo el
+                lenguaje verbal como elemento de
+                apoyo a la comunicación. " />
+
+            <LinearLayout
+                android:layout_width="87dp"
+                android:layout_height="183dp"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="89dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/me_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:text="Que es el sistema SACC?"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Column 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="139dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:layout_gravity="right"
+                android:src="@drawable/master"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="271dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="101dp"
+                android:layout_height="208dp"
+                android:layout_gravity="left"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/team_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:text="SPC"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/textView2"
+                android:layout_width="220dp"
+                android:layout_height="189dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="SPC o Sistema Pictográfico de Comunicación
+                Fue desarrollado en 1981 por Mayer y Johnson y se caracteriza por su
+                 facilidad de interpretación, puesto que sus íconos representan de
+                 claramente el concepto que desean transmitir." />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+                    android:layout_width="333dp"
+                    android:layout_height="74dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="!EMPECEMOS!"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
